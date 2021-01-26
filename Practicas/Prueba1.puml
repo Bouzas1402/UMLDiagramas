@@ -9,5 +9,5 @@ Jugador <|-- Avn
 Jugador -- (Iniciar partida)
 (Iniciar partida) .> (Cargar un nivel) : <<include>>
 Jugador -- (Mover jugador)
-(Mover jugador) <. (Cargar un nivel) : >>extend>>
+(Mover jugador) <. (Cargar un nivel) : <<extend>>
 @enduml
