@@ -1,0 +1,13 @@
+@startuml
+left to right direction
+
+
+package Sokoban {
+actor Jugador
+actor :Jugador avanzado: as Avn
+Jugador <|-- Avn
+Jugador -- (Iniciar partida)
+(Iniciar partida) .> (Cargar un nivel) : <<include>>
+Jugador -- (Mover jugador)
+(Mover jugador) <. (Cargar un nivel) : >>extend>>
+@enduml
