@@ -1,0 +1,12 @@
+@startuml
+'https://plantuml.com/use-case-diagram
+
+actor mecanico
+actor gerente
+actor cliente
+actor cliente
+
+
+
+
+@enduml

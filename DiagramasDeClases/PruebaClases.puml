@@ -1,0 +1,67 @@
+@startuml
+'https://plantuml.com/class-diagram
+'esto es un comentario (con una comilla simple al principio)
+'esto es la plantilla del IntelliJ
+'abstract class AbstractList
+'abstract AbstractCollection
+'interface List
+'interface Collection
+
+'List <|-- AbstractList
+'Collection <|-- AbstractCollection
+
+'Collection <|- List
+'AbstractCollection <|- AbstractList
+'AbstractList <|-- ArrayList
+
+'class ArrayList {
+'Object[] elementData
+'size()
+'}
+
+'enum TimeUnit {
+'DAYS
+'HOURS
+'MINUTES
+'}
+' Ejercicio empresa empleado cliente
+class Persona {
+nombre : String
+edad : int
+'esto es una clase:
+mostar()
+}
+
+class Empleado {
+salarioBruto : float
+
+}
+
+class Directivo {
+categoria : String
+}
+
+class Cliente {
+telefono : String
+}
+
+class Empresa {
+}
+
+'Esto significa que el Objeto Empleado/Cliente hereda los atributos de Persona
+'Empleado y Cliente son clases hermanas pero dicen cosas distintas
+Persona <|-- Empleado
+Persona <|-- Cliente
+'Esto seria pintar la recursividad:
+Empleado <|-- Directivo
+'Esto es para marcar las relaciones en esta caso esto seria de 1 a 1 y de 0 a N
+'Es decir, un empleado puede ser un directivo y un directivo puede tener 0 o n empleados
+Directivo "1" -- "0..*" Empleado : subordinado
+
+'enum TimeUnit {
+'DAYS
+'HOURS
+'MINUTES
+'}
+
+@enduml
